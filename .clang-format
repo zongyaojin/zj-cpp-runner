@@ -23,7 +23,7 @@ BinPackParameters: true
 BreakBeforeBraces: Mozilla
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: true
-ColumnLimit: 140
+ColumnLimit: 120
 CommentPragmas: "^ IWYU pragma:"
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 0

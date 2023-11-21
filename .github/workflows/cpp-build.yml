@@ -1,0 +1,29 @@
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+name: C++ Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository with submodules
+        uses: actions/checkout@v4
+
+      - name: Set up
+        run: |
+          bash ./zj-setup.bash
+          bash ./zj-pre-commit.bash
+
+      - name: Build and run
+        run: |
+          mkdir -p ./build
+          cd build
+          cmake ..
+          make
+          ./zj-cpp-runner
