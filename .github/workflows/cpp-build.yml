@@ -22,8 +22,8 @@ jobs:
 
       - name: Build and run
         run: |
-          mkdir ./build
+          mkdir -p ./build
           cd build
           cmake ..
           make
-          ./main
+          ./zj-cpp-runner

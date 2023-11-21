@@ -3,7 +3,6 @@
 # https://cmake-format.readthedocs.io/en/latest/configuration.html
 # -------------------------------------------------------- #
 with section("format"):
-
     # How wide to allow formatted cmake files
     line_width = 120
 
@@ -11,13 +10,13 @@ with section("format"):
     tab_size = 4
 
     # If a candidate layout is wrapped horizontally but it exceeds this many lines, then reject the layout
-    max_lines_hwrap = 3
+    max_lines_hwrap = 4
 
     # If an argument group contains more than this many sub-groups (parg or kwarg groups) then force it to a vertical layout
-    max_subgroups_hwrap = 3
+    max_subgroups_hwrap = 4
 
     # If a positional argument group contains more than this many arguments, then force it to a vertical layout
-    max_pargs_hwrap = 3
+    max_pargs_hwrap = 4
 
     # If true, separate flow control names from their parentheses with a space
     separate_ctrl_name_with_space = False
@@ -34,6 +33,5 @@ with section("format"):
 # Code C0103 is for variable names linting
 # ----------------------------
 with section("lint"):
-
     # A list of lint codes to disable
-    disabled_codes = ['C0103']
+    disabled_codes = ["C0103"]

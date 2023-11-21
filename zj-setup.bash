@@ -19,5 +19,5 @@ pip install --upgrade pip setuptools
 sudo apt install -y cppcheck
 pip install --user pre-commit cmakelang isort cpplint
 
-# Library dependencies
-sudo apt install -y libspdlog-dev libeigen3-dev
+# Common library dependencies
+sudo apt install -y libspdlog-dev libeigen3-dev libboost-all-dev
