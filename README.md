@@ -3,7 +3,7 @@
 [![C++ Build](https://github.com/zongyaojin/zj-cpp-runner/actions/workflows/cpp-build.yml/badge.svg)](https://github.com/zongyaojin/zj-cpp-runner/actions/workflows/cpp-build.yml)
 [![GitHub license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/zongyaojin/zj-cpp-runner/blob/main/LICENSE)
 
-A simple skeleton project to build and run some simple C++ code. The `CMakeLists.txt` assumes the following folder structure:
+A simple skeleton project to build and run some basic C++ code. The `CMakeLists.txt` assumes the following folder structure:
 
 ```text
 $package/
