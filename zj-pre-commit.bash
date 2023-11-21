@@ -5,6 +5,10 @@ set -exo pipefail
 script_file=$(realpath "$0")
 package_path=$(dirname "$script_file")
 
+# Update system package manager
+sudo apt update -y
+sudo apt upgrade -y
+
 # Install pip
 sudo apt install -y python3-pip
 
