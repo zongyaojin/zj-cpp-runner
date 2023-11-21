@@ -14,9 +14,7 @@ $package/
     |-- CMakeLists.txt
 ```
 
-The `$package` requires Ubuntu 22.04, it installs and finds `Boost`, `Eigen3`, `spdlog`, and compiles with `c++23` and `c17`.
-
-To set up and run the project:
+The `$package` requires Ubuntu 22.04. It installs and finds `Boost`, `Eigen3`, `spdlog`, and compiles with `c++23` and `c17`. To set up and run the project:
 
 ```text
 > bash ./zj-setup.bash

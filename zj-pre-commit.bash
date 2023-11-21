@@ -1,6 +1,7 @@
 #!/bin/bash
 set -exo pipefail
 
+# Path definition
 script_file=$(realpath "$0")
 package_path=$(dirname "$script_file")
 
