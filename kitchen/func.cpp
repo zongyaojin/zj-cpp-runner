@@ -10,4 +10,5 @@ void func()
     std::cout << "file: " << location.file_name() << std::endl;
     std::cout << "line: " << location.line() << std::endl;
     std::cout << "column: " << location.column() << std::endl;
+    std::cout << std::endl;
 }
