@@ -6,24 +6,35 @@
 #include "eigen3/Eigen/Dense"
 #include "spdlog/spdlog.h"
 
+#include <stack>
 #include "func.hpp"
 
-int main()
+using namespace std;
+
+class CatalanSequence
 {
-    spdlog::info("Hello, world!");
+public:
+    CatalanSequence(int n) { generate(n, 0, ""); }
 
-    Eigen::VectorXd v(3);
-    v << 1, 2, 3;
-    std::cout << "vector: " << v.transpose() << std::endl;
+    void generate(int open, int close, string output)
+    {
+        if (open == 0 && close == 0) {
+            spdlog::info("{}", output.c_str());
+            return;
+        }
 
-    std::stringstream ss;
-    ss << v.transpose();
-    spdlog::warn("vector: {}", ss.str());
+        if (open > 0) generate(open - 1, close + 1, output + "(");
+        if (close > 0) generate(open, close - 1, output + ")");
+    }
+};
 
-    int i = boost::lexical_cast<int>("123");
-    printf("i = %d\n", i);
-
+int main(int argc, char* argv[])
+{
     func();
 
+    int n = 3;
+    if (argc > 1) n = boost::lexical_cast<int>(argv[1]);
+
+    CatalanSequence obj(n);
     return 0;
 }
